@@ -13,9 +13,13 @@
 		AC85D2931EBABC22005B94C1 /* MesaMesa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC85D2911EBABC22005B94C1 /* MesaMesa.xcdatamodeld */; };
 		AC85D2951EBABC22005B94C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC85D2941EBABC22005B94C1 /* Assets.xcassets */; };
 		AC85D2981EBABC22005B94C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC85D2961EBABC22005B94C1 /* LaunchScreen.storyboard */; };
+		AC85D2A01EBAC75E005B94C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC85D29F1EBAC75E005B94C1 /* GoogleService-Info.plist */; };
+		FA8D433CCD4348AB009BDB68 /* Pods_MesaMesa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331437E4C7F28FA62E7F5BC5 /* Pods_MesaMesa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31B51C59F828873547F11240 /* Pods-MesaMesa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MesaMesa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MesaMesa/Pods-MesaMesa.debug.xcconfig"; sourceTree = "<group>"; };
+		331437E4C7F28FA62E7F5BC5 /* Pods_MesaMesa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MesaMesa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC85D2871EBABC22005B94C1 /* MesaMesa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MesaMesa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC85D28A1EBABC22005B94C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC85D28C1EBABC22005B94C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		AC85D2941EBABC22005B94C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC85D2971EBABC22005B94C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC85D2991EBABC22005B94C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC85D29F1EBAC75E005B94C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BFCF96FC3A2B77519DAA5F9C /* Pods-MesaMesa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MesaMesa.release.xcconfig"; path = "Pods/Target Support Files/Pods-MesaMesa/Pods-MesaMesa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8D433CCD4348AB009BDB68 /* Pods_MesaMesa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36C4699415667972ADCDBFA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31B51C59F828873547F11240 /* Pods-MesaMesa.debug.xcconfig */,
+				BFCF96FC3A2B77519DAA5F9C /* Pods-MesaMesa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3AE919BD65845304D8B6F4BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				331437E4C7F28FA62E7F5BC5 /* Pods_MesaMesa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC85D27E1EBABC22005B94C1 = {
 			isa = PBXGroup;
 			children = (
 				AC85D2891EBABC22005B94C1 /* MesaMesa */,
 				AC85D2881EBABC22005B94C1 /* Products */,
+				36C4699415667972ADCDBFA4 /* Pods */,
+				3AE919BD65845304D8B6F4BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +88,7 @@
 				AC85D2941EBABC22005B94C1 /* Assets.xcassets */,
 				AC85D2961EBABC22005B94C1 /* LaunchScreen.storyboard */,
 				AC85D2991EBABC22005B94C1 /* Info.plist */,
+				AC85D29F1EBAC75E005B94C1 /* GoogleService-Info.plist */,
 				AC85D2911EBABC22005B94C1 /* MesaMesa.xcdatamodeld */,
 			);
 			path = MesaMesa;
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC85D29C1EBABC22005B94C1 /* Build configuration list for PBXNativeTarget "MesaMesa" */;
 			buildPhases = (
+				E9F67727FB187C1278ACEB73 /* [CP] Check Pods Manifest.lock */,
 				AC85D2831EBABC22005B94C1 /* Sources */,
 				AC85D2841EBABC22005B94C1 /* Frameworks */,
 				AC85D2851EBABC22005B94C1 /* Resources */,
+				D4C1DB92FDF39BCE126C35BD /* [CP] Embed Pods Frameworks */,
+				B746FD84152C3F0E1E85B4ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,12 +158,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC85D2981EBABC22005B94C1 /* LaunchScreen.storyboard in Resources */,
+				AC85D2A01EBAC75E005B94C1 /* GoogleService-Info.plist in Resources */,
 				AC85D2951EBABC22005B94C1 /* Assets.xcassets in Resources */,
 				AC85D2901EBABC22005B94C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B746FD84152C3F0E1E85B4ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MesaMesa/Pods-MesaMesa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4C1DB92FDF39BCE126C35BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MesaMesa/Pods-MesaMesa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9F67727FB187C1278ACEB73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC85D2831EBABC22005B94C1 /* Sources */ = {
@@ -265,6 +344,7 @@
 		};
 		AC85D29D1EBABC22005B94C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B51C59F828873547F11240 /* Pods-MesaMesa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ETZ2EQHXDA;
@@ -278,6 +358,7 @@
 		};
 		AC85D29E1EBABC22005B94C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFCF96FC3A2B77519DAA5F9C /* Pods-MesaMesa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ETZ2EQHXDA;
