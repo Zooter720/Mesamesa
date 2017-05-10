@@ -14,6 +14,9 @@
 		AC85D2951EBABC22005B94C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC85D2941EBABC22005B94C1 /* Assets.xcassets */; };
 		AC85D2981EBABC22005B94C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC85D2961EBABC22005B94C1 /* LaunchScreen.storyboard */; };
 		AC85D2A01EBAC75E005B94C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC85D29F1EBAC75E005B94C1 /* GoogleService-Info.plist */; };
+		ACE290631EC2A38E00365523 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE290621EC2A38E00365523 /* profileViewController.swift */; };
+		ACE290671EC2B17F00365523 /* newLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE290661EC2B17F00365523 /* newLayoutViewController.swift */; };
+		ACE290691EC2BB2C00365523 /* shapeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE290681EC2BB2C00365523 /* shapeTableViewController.swift */; };
 		FA8D433CCD4348AB009BDB68 /* Pods_MesaMesa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331437E4C7F28FA62E7F5BC5 /* Pods_MesaMesa.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		AC85D2971EBABC22005B94C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC85D2991EBABC22005B94C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC85D29F1EBAC75E005B94C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACE290621EC2A38E00365523 /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		ACE290661EC2B17F00365523 /* newLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newLayoutViewController.swift; sourceTree = "<group>"; };
+		ACE290681EC2BB2C00365523 /* shapeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shapeTableViewController.swift; sourceTree = "<group>"; };
 		BFCF96FC3A2B77519DAA5F9C /* Pods-MesaMesa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MesaMesa.release.xcconfig"; path = "Pods/Target Support Files/Pods-MesaMesa/Pods-MesaMesa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +90,9 @@
 			children = (
 				AC85D28A1EBABC22005B94C1 /* AppDelegate.swift */,
 				AC85D28C1EBABC22005B94C1 /* ViewController.swift */,
+				ACE290621EC2A38E00365523 /* profileViewController.swift */,
+				ACE290661EC2B17F00365523 /* newLayoutViewController.swift */,
+				ACE290681EC2BB2C00365523 /* shapeTableViewController.swift */,
 				AC85D28E1EBABC22005B94C1 /* Main.storyboard */,
 				AC85D2941EBABC22005B94C1 /* Assets.xcassets */,
 				AC85D2961EBABC22005B94C1 /* LaunchScreen.storyboard */,
@@ -219,8 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE290671EC2B17F00365523 /* newLayoutViewController.swift in Sources */,
+				ACE290691EC2BB2C00365523 /* shapeTableViewController.swift in Sources */,
 				AC85D28D1EBABC22005B94C1 /* ViewController.swift in Sources */,
 				AC85D28B1EBABC22005B94C1 /* AppDelegate.swift in Sources */,
+				ACE290631EC2A38E00365523 /* profileViewController.swift in Sources */,
 				AC85D2931EBABC22005B94C1 /* MesaMesa.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

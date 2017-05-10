@@ -65,7 +65,7 @@ class ViewController: UIViewController {
                         self.errorText.isHidden = false
                         let delayInSeconds = 2.5
                         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
-                            // here code perfomed with delay
+                            self.performSegue(withIdentifier: "signinSegue", sender: nil)
                         }
 
                     }
@@ -74,6 +74,7 @@ class ViewController: UIViewController {
                 self.errorText.isHidden = true
 
                 print("Signed-in Successfully")
+                self.performSegue(withIdentifier: "signinSegue", sender: nil)
             }
         })
     }
