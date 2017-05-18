@@ -41,7 +41,7 @@ class shapeTableViewController: UITableViewController {
         // Configure the cell...
         cell.textLabel?.text = tableData[indexPath.row]
         
-        var imageName = UIImage(named: tableData[indexPath.row])
+        let imageName = UIImage(named: tableData[indexPath.row])
         cell.imageView?.image = imageName
 
 

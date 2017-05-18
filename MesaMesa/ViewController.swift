@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseCore
 import FirebaseAuth
+import FirebaseDatabase
 
 class ViewController: UIViewController {
     
@@ -17,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var pwordTextField: UITextField!
     
     @IBOutlet weak var errorText: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +63,9 @@ class ViewController: UIViewController {
                         //self.errorText.isHidden = true
                     }else{
                         print("New User Created")
+                        //add user to database
+                      FIRDatabase.database().reference().child("users").child(user!.uid).child("email").setValue(user!.email!)
+                        
                         self.errorText.text="We just created a MesaMesa account for you. Welcome to the table."
                         self.errorText.textColor = UIColor.black
                         self.errorText.isHidden = false
